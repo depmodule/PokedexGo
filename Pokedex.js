@@ -19,10 +19,19 @@ function interpretPoke(poke) {
     //Add shortcut names here.
     switch (poke) {
         case 'ttar':
-            poke = 'tyranituar';
+            poke = 'tyranitar';
             break;
         case 'zap':
             poke = 'zapdos';
+            break;
+        case 'gary':
+            poke = 'gyarados';
+            break;
+        case 'doompupper':
+            poke = 'houndour';
+            break;
+        case 'doomdoggo':
+            poke = 'houndoom';
             break;
     }
 
@@ -148,10 +157,10 @@ let pokemon = {
     28: undefined,
     29: undefined,
     30: undefined,
-    31: undefined,
+    31: new Pokemon(31, 0x966622, 'Ground/Poison', 4, 'Mewtwo | (Confusion, Psycho Cut)/(Psychic, Shadow Ball)', 'Gound, Ice, Psychic, Water', 'Bug, Electric(x2), Fairy, Poison(x2), Fight', '**A/A** - Poison Jab/Earthquake\n**A/B** - Poison Jab/Sludge Wave\n**B/C** - Bite/Earthquake\n**B/B** - Poison Jab/Stone Edge\n**C/D** - Bite/Sludge Wave\n**D/D** - Bite/Stone Edge', 1336),
     32: undefined,
     33: undefined,
-    34: undefined,
+    34: new Pokemon(34, 0x966622, 'Ground / Poison', 4, 'Mewtwo | (Confusion, Psycho Cut)/(Psychic, Shadow Ball)', 'Ground, Ice, Psychic, Water', 'Bug, Electric(x2), Fairy, Poison(x2), Fight', '**A/B** - Poison Jab/Earthquake\n**A/B** - Poison Jab/Sludge Wave\n**B/C** - Poison Jab/Megahorn\n**B/A** - Iron Tail/Earthquake\n**B/A** - Iron Tal/Sludge Wave\n**C/B** - Iron Tail/Megahorn', 1363),
     35: undefined,
     36: undefined,
     37: undefined,
@@ -179,21 +188,21 @@ let pokemon = {
     59: new Pokemon(59, 0xff7b00, 'Fire', 3, 'Rhydon | Mud Slap/(Stone Edge, Earthquake)\nGolem | (Mud Slap, Rock Throw, Mud Shot)/(Stone Edge, Earthquake)\nMewtwo | (Confusion, Psycho Cut)/(Shadow Ball, Psychic)', 'Rock, Ground, Water', 'Bug, Fire, Grass, Fairy, Steel, Ice', '**A/B** | Fire Fang/Fire Blast\n**B/A** | Fire Fang/Wild Charge\n**B/B** | Snarl/Fire Blast\n**B/A** | Snarl/Wild Charge\n**B/B** | Fire Fang/Crunch\n**C/B** | Snarl/Crunch', 1622),
     60: undefined,
     61: undefined,
-    62: undefined,
+    62: new Pokemon(62, 0xa50000, 'Fight / Water', 4, 'Mewtwo | (Confusion, Psycho Cut)/(Psychic, Shadow Ball)', 'Electric, Grass, Fairy, Flying, Psychic', 'Bug, Fire, Rock, Dark, ', '**A/A** - Bubble/Dynamic Punch\n**A/B** - Rock Smash/Dynamic Punch\n**A/B** - Bubble/Hydro Pump\n**B/B** - Rock Smash/Hydro Pump\n**B-/C** - Rock Smash/Submission\n**C/A** - Bubble/Ice Punch\n**C/A** - Rock Smash/Ice Punch', 1395),
     63: undefined,
     64: undefined,
-    65: new Pokemon(65, 0xff494c, 'Psychic', 3, 'Mewto | (Confusion, Psycho Cut)/Shadow Ball\nTyranitar | Bite/(Crush, Stone Edge)\nAlakazam | (Confustion, Psycho Cut)/Shadow Ball', 'Bug, Dark, Ghost', 'Fight, Psychic', '**A/F** | Psycho Cut/Future Sight\n**A/B** | Confusion/Future Sight\n**A-/D** | Psycho Cut/Shadow Ball\n**A-/A** | Confusion/Shadow Ball\n**C/F** | Psycho Cut/Focus Blast\n**C/B** | Confusion/Focus Blast', 1649),
+    65: new Pokemon(65, 0xff494c, 'Psychic', 3, 'Mewtwo | (Confusion, Psycho Cut)/Shadow Ball\nTyranitar | Bite/(Crush, Stone Edge)\nAlakazam | (Confustion, Psycho Cut)/Shadow Ball', 'Bug, Dark, Ghost', 'Fight, Psychic', '**A/F** | Psycho Cut/Future Sight\n**A/B** | Confusion/Future Sight\n**A-/D** | Psycho Cut/Shadow Ball\n**A-/A** | Confusion/Shadow Ball\n**C/F** | Psycho Cut/Focus Blast\n**C/B** | Confusion/Focus Blast', 1649),
     66: undefined,
     67: undefined,
-    68: new Pokemon(68, 0xa50000, 'Fighting', 3, 'Mewto | (Confusion, Psycho Cut)/(Shadow Ball, Psychic)\nLugia | Extrasensory/(Future Sight, Sky Attack)\nMoltres | Fire Spin/Overheat', 'Fairy, Flying, Psychic', 'Bug, Rock, Dark', '**A/A** | Counter/Dynamic Punch\n**A-/B** | Counter/Close Combat\n**C/B** | Counter/Heavy Slam\n**C/B** | Bullet Punch/Dynamic Punch\n**D/D** | Bullet Punch/Close Combat\n**D/D** | Bullet Punch/Heavy Slam', 1650),
+    68: new Pokemon(68, 0xa50000, 'Fighting', 3, 'Mewtwo | (Confusion, Psycho Cut)/(Shadow Ball, Psychic)\nLugia | Extrasensory/(Future Sight, Sky Attack)\nMoltres | Fire Spin/Overheat', 'Fairy, Flying, Psychic', 'Bug, Rock, Dark', '**A/A** | Counter/Dynamic Punch\n**A-/B** | Counter/Close Combat\n**C/B** | Counter/Heavy Slam\n**C/B** | Bullet Punch/Dynamic Punch\n**D/D** | Bullet Punch/Close Combat\n**D/D** | Bullet Punch/Heavy Slam', 1650),
     69: undefined,
     70: undefined,
-    71: undefined,
+    71: new Pokemon(71, 0x017208, 'Grass / Poison', 4, 'N/A', 'Fire, Flying, Ice, Psychic', 'Electric, Grass(2x), Fairy, Fight, Water', '**A/B** - Razor Leaf/Solar Beam\n**A/B** - Razor Leaf/Leaf Blade\n**B/A** - Razor Leaf/Sludge Bomb\n**B/C** - Acid/Sludge Bomb\n**B/C** - Acid/Solar Beam\n**B/C** - Acid/Leaf Blade', 1296),
     72: undefined,
     73: undefined,
     74: undefined,
     75: undefined,
-    76: undefined,
+    76: new Pokemon(76, 0x966622, 'Ground / Rock', 4, 'N/A', 'Grass (x2), Water(x2), Ground, Steel, Fight, Ice', 'Electric(x2), Fire, Normal, Rock, Flying, Poison(x2)', '**A/A** - Rock Throw/Stone Edge\n**A/A** - Rock Throw/Rock Blast\n**A/C** - Mud Slap/Earthquake\n**A-/A** - Mud Slap/Stone Edge\n**B/C** - Rock Throw/Earthquake\n**B/A** - Mud Slap/Rock Blast\n**D/B** - Mud Slap/Ancient Power', 1666),
     77: undefined,
     78: undefined,
     79: undefined,
@@ -251,10 +260,10 @@ let pokemon = {
     131: new Pokemon(131, 0x57A6D7, 'Ice/Water', 4, 'Machamp | (Counter, Karate Chop)/(Dynamic Punch, Close Combat, Cross Chop)\nMewtwo | (Confusion, Psycho Cut)/(Focus Blast, Shadow Ball)\nZapdos | Charge Beam/(Thunderbolt, Zap Cannon)', 'Electric, Grass, Rock, Fight', 'Ice (x2), Water', '**A/C** | Frost Breath/Blizzard\n**A/B** | Frost Breath/Ice Beam\n**A-/F** | Water Gun/Hydro Pump\n**B/F** | Water Gun/Blizzard\n**B/D** | Water Gun/Ice Beam\n**B/C** | Frost Breath/Hydro Pump', 1487),
     132: undefined,
     133: undefined,
-    134: new Pokemon(134, 0x0902e5, 'Water', 3, 'Zapdos | Charge Beam/(Thunderbolt, Zap Cannon)\nExeggutor | (Bullet Seed, Confusion, Extrasensory)/(Solar Beam, Seed Bomb)\nMewto | (Confusion, Psycho Cut)/(Psychic, Shadow Ball)', 'Electric, Grass', 'Fire, Steel, Ice, Water', '**A/A** | Water Gun/Hydro Pump\n**A-/A-** | Water Gun/Aqua Tail\n**B/B** | Water Gun/Water Pulse', 1804),
+    134: new Pokemon(134, 0x0902e5, 'Water', 3, 'Zapdos | Charge Beam/(Thunderbolt, Zap Cannon)\nExeggutor | (Bullet Seed, Confusion, Extrasensory)/(Solar Beam, Seed Bomb)\nMewtwo | (Confusion, Psycho Cut)/(Psychic, Shadow Ball)', 'Electric, Grass', 'Fire, Steel, Ice, Water', '**A/A** | Water Gun/Hydro Pump\n**A-/A-** | Water Gun/Aqua Tail\n**B/B** | Water Gun/Water Pulse', 1804),
     135: new Pokemon(135, 0xfff600, 'Electric', 3, 'Rhydon | Mud Slap/Earthquake\nGolem | (Mud Slap, Mud Shot)/Earthquake\nDonphan | Counter/Earthquake', 'Ground', 'Electric, Flying, Steel', '**A/D** | Thunder Shock/Thunderbolt\n**A-/D** | Thunder Shock/Discharge\n**A-/F** | Thunder Shock/Thunder\n**B/A-** | Volt Switch/Thunderbolt\n**B/A** | Volt Switch/Discharge\n**C/B** | Volt Switch/Thunder', 1560),
-    136: new Pokemon(136, 0xff7b00, 'Fire', 3, 'Omastar | (Water Gun, Rock Throw)/(Hydro Pump, Rock Slide, Rock Blast)\nMewto | (Confusion, Psycho Cut)/(Psychic, Shadow Ball)\nGolem | (Mud Slap, Rock Throw, Mud Shot)/(Stone Edge, Earthquake)', 'Rock, Ground, Water', 'Bug, Fire, Grass, Fairy, Steel, Ice', '**A/B** | Fire Spin/Overheat\n**A-/C** | Fire Spin/Fire Blast\n**A-/A** | Fire Spin/Flamethrower\n**B/C** | Ember/Overheat\n**B/C** | Ember/Fire Blast\n**B/B** | Ember/Flamethrower', 1659),
-    137: undefined,
+    136: new Pokemon(136, 0xff7b00, 'Fire', 3, 'Omastar | (Water Gun, Rock Throw)/(Hydro Pump, Rock Slide, Rock Blast)\nMewtwo | (Confusion, Psycho Cut)/(Psychic, Shadow Ball)\nGolem | (Mud Slap, Rock Throw, Mud Shot)/(Stone Edge, Earthquake)', 'Rock, Ground, Water', 'Bug, Fire, Grass, Fairy, Steel, Ice', '**A/B** | Fire Spin/Overheat\n**A-/C** | Fire Spin/Fire Blast\n**A-/A** | Fire Spin/Flamethrower\n**B/C** | Ember/Overheat\n**B/C** | Ember/Fire Blast\n**B/B** | Ember/Flamethrower', 1659),
+    137: new Pokemon(137, 0x80847d, 'Normal', 4, 'Machamp | (Karate Chop, Counter)/(Dynamic Punch, Cross Chop, Close Combat)', 'Fight', 'Ghost (2x)', '**A/A** - Tackle/Signal Beam\n**A/A** - Tackle/Discharge\n**A/A** - Tackle/Psybeam\n**B/B** - Zen Headbutt/Discharge\n**B/A** - Zen Headbutt/Psybeam\n**B/A** - Zen Headbutt/Signal Beam', 895),
     138: undefined,
     139: undefined,
     140: undefined,
@@ -268,7 +277,7 @@ let pokemon = {
     148: undefined,
     149: undefined,
     150: new Pokemon(150, 0xDAD2E0, 'Psychic', 5, "Mewtwo | (Confusion, Psycho Cut)/Shadow Ball\nTyranitar | Bite / (Crunch, Stone Edge)\nLugia | (Extrasensory, Dragon Tail)/Sky Attack", "Bug, Dark, Ghost", "Fight, Psychic", "**A** | Confusion/Shadow Ball\n**A** | Psycho Cut/Shadow Ball\n**B** | Confusion/Focus Blast\n**B** | Psycho Cut/Focus Blast\n**C** | Psycho Cut/Psychic\n**C** | Confusion/Psychic\n**F** | Psycho Cut/Hyper Beam\n**F** | Confusion/Hyper Beam", 2275),
-    151: undefined,
+    151: new Pokemon(151, 0xff494c, 'Psychic', 5, 'Tyranitar | Bite/(Crunch, Stone Edge)\nGengar | (Shadow Claw, Hex, Sucker Punch)/Shadow Ball', 'Bug, Dark, Ghost', 'Fight, Psychic', 'N/A', 1762),
     152: undefined,
     153: new Pokemon(153, 0x017208, 'Grass', 1, 'N/A', 'Bug, Fire, Flying, Poison, Ice', 'Electric, Grass, Ground, Water', 'Razor Leaf\nTackle\nEnergy Ball\nGrass Knot\nAncient Power', 740),
     154: undefined,
@@ -362,13 +371,13 @@ let pokemon = {
     242: undefined,
     243: new Pokemon(243, 0xF5CC54, "Electric", 5, "Golem | (Mud Slap, Mud Shot, Rock Throw)/Earthquake\nRhydon | Mud Slap/Earthquake", "Ground", "Electric, Flying, Steel", "**A** | Thunder Shock/Wild Charge\n**A** | Volt Switch/Wild Charge\n**A-** | Thunder Shock/Thunderbolt\n**A-** | Volt Switch/Thunderbolt\n**B** | Thunder Shock/Thunder\n**B** | Volt Switch/Thunder", 1913),
     244: new Pokemon(244, 0xff7b00, 'Fire', 5, 'Omastar | (Rock Throw, Water Gun)/(Rock Slide, Rock Blast, Hydro Pump)\nVaporeon | Water Gun/(Aqua Tail, Hydro Pump)\nGolem | Mud Slap/Stone Edge, Mud Shot/Rock Blast, Rock Throw/Earthquake', 'Rock, Ground, Water', 'Bug, Fire, Grass, Fairy, Steel, Ice', '**A** | Fire Spin/Overheat\n**A-** | Fire Fang/Overheat\n**A-** | Fire Spin/Flamethrower\n**B** | Fire Fang/Flamethrower\n**B-** | Fire Spin/Fire Blast\n**C** | Fire Fang/Fire Blast', 1930),
-    245: new Pokemon(245, 0x0902e5, 'Water', 5, 'Raikou | Thunder Shock/Wild Charge\nZapdos | Charge Beam/(Thunderbolt, Zap Cannon)\nExeggutor | (Confusion,Extrasensory, Bullet Seed)/(Solar Beam, Seed Bomb)', 'Electric, Grass', 'Fire, Steel, Ice Water', '**A** | Hidden Power/Hydro Pump\n**A-** | Extrasensory/Hydro Pump\n**B** | Hidden Power/Bubble Beam\n**B-** | Extrasensory/Bubble Beam\n**B-** | Hidden Power/Water Pulse\n**C** | Extrasensory/Water Pulse', 1613),
+    245: new Pokemon(245, 0x0902e5, 'Water', 5, 'Raikou | Thunder Shock/Wild Charge\nZapdos | Charge Beam/(Thunderbolt, Zap Cannon)\nExeggutor | (Confusion,Extrasensory, Bullet Seed)/(Solar Beam, Seed Bomb)', 'Electric, Grass', 'Fire, Steel, Ice, Water', '**A** | Hidden Power/Hydro Pump\n**A-** | Extrasensory/Hydro Pump\n**B** | Hidden Power/Bubble Beam\n**B-** | Extrasensory/Bubble Beam\n**B-** | Hidden Power/Water Pulse\n**C** | Extrasensory/Water Pulse', 1613),
     246: undefined,
     247: undefined,
     248: new Pokemon(248, 0xa4b68e, "Dark/Rock", 4, "Machamp | (Counter, Karate Chop)/(Dynamic Punch, Close Combat, Cross Chop)\nPoliwrath | (Rock Smash, Bubble)/Dynamic Punch", "Bug, Grass, Fairy, Ground, Steel, Fight (x2), Water", "Fire, Normal, Dark, Flying, Poison, Ghost, Psychic (x2)", "**A/C** | Bite/Crunch\n**A/C** | Bite/Stone Edge\n**C/D** | Bite/Fire Blast\n**C/A** | Iron Tail/Crunch\n**C/A** | Iron Tail/Stone Edge\n**D/B** | Iron Tail/Fire Blast", 2097),
     249: new Pokemon(249, 0xf1EEF7, "Flying/Psychic", 5, "Mewtwo | (Confusion, Psycho Cut)/Shadow Ball\nTyranitar | Bite/(Stone Edge, Crunch)\nZapdos | Charge Beam/(Thunderbolt, Thunder)", "Electric, Rock, Dark, Ghost, Ice", "Grass, Ground (x2), Fight (x2), Psychic", "**A** | Extrasensory/Sky Attack\n**A** | Extrasensory/Future Sight\n**B** | Dragon Tail/Sky Attack\n**B** | Dragon Tail/Future Sight\n**C** | Extrasensory/Hydro Pump\n**C-** | Dragon Tail/Hydro Pump", 2056),
-    250: undefined,
-    251: undefined,
+    250: new Pokemon(250, 0xff7b00, 'Fire / Flying', 0, 'Zapdos | Charge Beam/(Thunderbolt, Zap Cannon)\nOmastar | (Rock Throw, Water Gun)/(Rock Slide, Rock Blast, Hydro Pump)\nGolem | Rock Throw/(Stone Edge, Rock Blast)', 'Electric, Rock(x2), Water', 'Bug(x2), Fire, Grass(x2), Fairy, Ground, Steel, Fight', 'N/A', 2222),
+    251: new Pokemon(251, 0x017208, 'Grass / Psychic', 5, 'Scizor | (Fury Cutter, Bullet Punch)/X-Scissor\n', 'Bug(x2), Fire, Dark, Flying, Poison, Ghost, Ice', 'Electric, Grass, Ground, Fight, Psychic, Water', 'N/A', 1766),
     252: undefined,
     253: undefined,
     254: undefined,
