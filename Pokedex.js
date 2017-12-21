@@ -518,7 +518,7 @@ let pokemon = {
     380: undefined,
     381: undefined,
     382: undefined,
-    383: new Pokemon(383, 0x966622, 'Ground', 5, 'Gyarados | Waterfall/Hydro Pump\nExeggutor | Bullet Seed/Solar Beam\nVaporeon | Water Gun/Hydro Pump\nVenusaur | Vine Whip/Solar Beam\nSceptile | Bullet Seed/Leaf Blade\nArticuno | Frost Breath/Ice Beam\nJynx | Frost Breath/Avalanche\n', 'Water(x2), Grass(x2), Ice(x2)', 'Electric(x2), Poison, Rock', '**A** | Mud Shot/Solar Beam\n**A-** | Mud Shot/Earthquake\n**A-** | Dragon Tail/Solar Beam\n**C** | Mud Shot/Fire Blast\n**C** | Dragon Tail/Earthquake', 2785),
+    383: new Pokemon(383, 0x966622, 'Ground', 5, 'Gyarados | Waterfall/Hydro Pump\nExeggutor | Bullet Seed/Solar Beam\nVaporeon | Water Gun/Hydro Pump\nVenusaur | Vine Whip/Solar Beam\nSceptile | Bullet Seed/Leaf Blade\nArticuno | Frost Breath/Ice Beam\nJynx | Frost Breath/Avalanche\n', 'Water(x2), Grass(x2), Ice(x2)', 'Electric(x2), Poison, Rock', '**A** | Mud Shot/Solar Beam\n**A-** | Mud Shot/Earthquake\n**A-** | Dragon Tail/Solar Beam\n**C** | Mud Shot/Fire Blast\n**C** | Dragon Tail/Earthquake', 2328),
     384: undefined,
     385: undefined,
     386: undefined,
