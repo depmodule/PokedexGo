@@ -109,9 +109,33 @@ class Pokemon {
             .addField("Weak to:", weakTo)
             .addField("Resistant to:", resistantTo)
             .addField("Moveset Grades (**Attack/Defense**):", moveSetGrades)
-            .addField("Top Raid CP: " + highestCP, "[More Info](https:\/\/pokemongo.gamepress.gg/pokemon/" + pokeID + ")")
+            .addField("Top Raid CP: " + highestCP)
+            // .addField("[More Info](https:\/\/pokemongo.gamepress.gg/pokemon/" + pokeID + ")")
     }
 }
+
+// Colors (by type)
+let colors = {
+    normal: 0x80847d,
+    fighting: 0xa50000,
+    flying: 0x708ee0,
+    poison: 0xe064e0,
+    ground: 0x966622,
+    rock: 0xba9560,
+    bug: 0x82f722,
+    ghost: 0x7526d6,
+    steel: 0x005791,
+    fire: 0xff7b00, 
+    water: 0x0902e5,
+    grass: 0x017208, 
+    electric: 0xfff600,
+    psychic: 0xff494c,
+    ice: 0x509fd8, 
+    dark: 0x252728,
+    dragon: 0x036fa5,
+    fairy: 0xf9b6ee
+};
+
 
 // Type objects
 let types = {
@@ -441,7 +465,7 @@ let pokemon = {
     303: new Pokemon(303, 0x005791, 'Steel / Fairy', 4, 'Flareon | Fire Spin/Overheat\nCharizard | Fire Spin/Overheat\nArcanine | Fire Fang/Flamethrower\nBlaziken | Fire Spin/Overheat\nTyphlosion | Ember/Overheat\nRhydon | Mud-Slap/Earthquake\nGolem | Mud-Slap/Earthquake\n', 'Fire(x2), Ground(x2)', 'Normal, Grass, Ice, Poison(x4), Flying, Psychic, Bug(x2), Rock, Dragon, Fairy', 'Astonish/Play Rough\nAstonish/Iron Head\nAstonish/Vice Grip\nBite/Play Rough\nBite/Iron Head\nBite/Vice Grip', 848),
     304: undefined,
     305: undefined,
-    306: new Pokemon(306, 0xba9560, 'Rock / Steel', 4, '', 'Ground, Fighting, Water', 'Normal, Flying, Rock, Bug, Steel, GRass, Psychic, Ice, Dragon, Fairy\n', '**A** - Iron Tail/Heavy Slam\n**A-/B** - Iron Tail/Stone Edge\n**A-/A-** - Dragon Tail/Heavy Slam\n**B/B** - Dragon Tail/Stone Edge\n**X/C** - Iron Tail/Thunder\n**X/C** - Dragon Tail/Thunder', 3004),
+    306: new Pokemon(306, colors.steel, 'Steel / Rock', 4, 'Machamp | Counter/Dynamic Punch\nHariyama | Counter/Dynamic Punch\nGroudon | Mud Shot/Earthquake\nBreloom | Counter/Dynamic Punch\nBlaziken | Counter/Focus Blast\nPoliwrath | Rock Smash/Dynamic Punch\nKyogre | Waterfall/Hydro Pump', 'Fighting (x2), Ground (x2), Water', 'Normal (x2), Fighting, Poison (x4), Flying (x2), Psychic, Bug, Rock, Dragon, Fairy', '**A** | Iron Tail/Heavy Slam\n**A** | Iron Tail/Stone Edge\n**A-** | Dragon Tail/Heavy Slam\n**B** | Dragon Tail/Stone Edge\n**B** | Iron Tail/Thunder\n**C** | Dragon Tail/Thunder', '1716 (2145 in snowy or partly cloudy weather)'),
     307: undefined,
     308: undefined,
     309: undefined,
@@ -455,7 +479,7 @@ let pokemon = {
     317: undefined,
     318: undefined,
     319: undefined,
-    320: undefined,
+    320: new Pokemon(320, colors.water, 'Water', 1, 'Exeggutor | Bullet Seed/Solar Beam\nJolteon | Thunder Shock/Thunderbolt\nVictreebel | Razor Leaf/Solar Beam\nVenusaur | Vine Whip/Solar Beam\nAmpharos | Charge Beam/Zap Cannon\nVileplume | Razor Leaf/Solar Beam', 'Electric, Grass', 'Fire, Water, Ice, Steel', '**A** | Water Gun/Water Pulse\n**A** | Water Gun/Heavy Slam\n**A** | Water Gun/Body Slam\n**C** | Splash/Water Pulse\n**D** | Splash/Heavy Slam\n**D** | Splash/Body Slam\n', '814 (1017 in rainy weather)'),
     321: undefined,
     322: undefined,
     323: undefined,
@@ -519,7 +543,7 @@ let pokemon = {
     381: undefined,
     382: new Pokemon(382, 0x0902e5, 'Water', 5, 'Raikou | Thunder Shock/Wild Charge\nZapdos | Charge Beam/Thunderbolt\nJolteon | Thunder Shock/Thunderbolt\nSceptile | Bullet Seed/Leaf Blade\nExeggutor | Bullet Seed/Solar Beam\nVenusaur | Vine Whip/Solar Beam\nGroudon | Mud Shot/Solar Beam\nHo-Oh | Extrasensory/Solar Beam', 'Electric, Grass', 'Fire, Water, Ice, Steel', '**A/A-** | Waterfall/Hydro Pump\n**B/A** | Waterfall/Blizzard\n**C/C** | Waterfall/Thunder', 2328),
     383: new Pokemon(383, 0x966622, 'Ground', 5, 'Gyarados | Waterfall/Hydro Pump\nExeggutor | Bullet Seed/Solar Beam\nVaporeon | Water Gun/Hydro Pump\nVenusaur | Vine Whip/Solar Beam\nSceptile | Bullet Seed/Leaf Blade\nArticuno | Frost Breath/Ice Beam\nJynx | Frost Breath/Avalanche\n', 'Water(x2), Grass(x2), Ice(x2)', 'Electric(x2), Poison, Rock', '**A** | Mud Shot/Solar Beam\n**A-** | Mud Shot/Earthquake\n**A-** | Dragon Tail/Solar Beam\n**C** | Mud Shot/Fire Blast\n**C** | Dragon Tail/Earthquake', 2328),
-    384: undefined,
+    384: new Pokemon(384, colors.dragon, 'Dragon / Flying', 5, 'Articuno | Frost Breath/Ice Beam\nJynx | Frost Breath/Avalanche\nDragonite | Dragon Tail/Outrage\nKyogre | Waterfall/Blizzard\nSneasel | Ice Shard/Avalanche\nCloyster | Ice Shard/Avalanche\nPiloswine | Powder Snow/Avalanche\nLapras | Frost Breath/Ice Beam\nWalrein | Frost Breath/Blizzard\nTyranitar | Bite/Stone Edge\nGolem | Rock Throw/Stone Edge\nGardevoir | Confusion/Dazzling Gleam', 'Ice (x2), Rock, Dragon, Fairy', 'Fire, Water, Grass (x2), Fighting, Ground (x4), Bug', '**A** | Dragon Tail/Outrage\n**A** | Air Slash/Outrage\n**B** | Dragon Tail/Aerial Ace\n**B-** | Air Slash/Aerial Ace\n**C** | Dragon Tail/Ancient Power\n**C** | Air Slash/Ancient Power', '2083 (2604 in windy weather)'),
     385: undefined,
     386: undefined,
     387: undefined,
