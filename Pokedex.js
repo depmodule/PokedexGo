@@ -109,7 +109,7 @@ class Pokemon {
             .addField("Weak to:", weakTo)
             .addField("Resistant to:", resistantTo)
             .addField("Moveset Grades (**Attack/Defense**):", moveSetGrades)
-            .addField("Top Raid CP: " + highestCP, "[More Info](https://db.pokemongohub.net/pokemon/" + pokeID + ")");
+            .addField("Top Raid CP: " + highestCP, "[More Info](https:\/\/db.pokemongohub.net/pokemon/" + pokeID + ")");
     }
 }
 
