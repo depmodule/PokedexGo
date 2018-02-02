@@ -441,7 +441,7 @@ let pokemon = {
     303: new Pokemon(303, 0x005791, 'Steel / Fairy', 4, 'Flareon | Fire Spin/Overheat\nCharizard | Fire Spin/Overheat\nArcanine | Fire Fang/Flamethrower\nBlaziken | Fire Spin/Overheat\nTyphlosion | Ember/Overheat\nRhydon | Mud-Slap/Earthquake\nGolem | Mud-Slap/Earthquake\n', 'Fire(x2), Ground(x2)', 'Normal, Grass, Ice, Poison(x4), Flying, Psychic, Bug(x2), Rock, Dragon, Fairy', 'Astonish/Play Rough\nAstonish/Iron Head\nAstonish/Vice Grip\nBite/Play Rough\nBite/Iron Head\nBite/Vice Grip', 848),
     304: undefined,
     305: undefined,
-    306: undefined,
+    306: new Pokemon(306, 0xba9560, 'Rock / Steel', 4, '', 'Ground, Fighting, Water', 'Normal, Flying, Rock, Bug, Steel, GRass, Psychic, Ice, Dragon, Fairy\n', '**A** - Iron Tail/Heavy Slam\n**A-/B** - Iron Tail/Stone Edge\n**A-/A-** - Dragon Tail/Heavy Slam\n**B/B** - Dragon Tail/Stone Edge\n**X/C** - Iron Tail/Thunder\n**X/C** - Dragon Tail/Thunder', 3004),
     307: undefined,
     308: undefined,
     309: undefined,
