@@ -309,7 +309,7 @@ let pokemon = {
     147: undefined,
     148: undefined,
     149: undefined,
-    150: new Pokemon(150, 0xDAD2E0, 'Psychic', 5, "Mewtwo | (Confusion, Psycho Cut)/Shadow Ball\nTyranitar | Bite / (Crunch, Stone Edge)\nLugia | (Extrasensory, Dragon Tail)/Sky Attack", "Bug, Dark, Ghost", "Fight, Psychic", "**A** | Confusion/Shadow Ball\n**A** | Psycho Cut/Shadow Ball\n**B** | Confusion/Focus Blast\n**B** | Psycho Cut/Focus Blast\n**C** | Psycho Cut/Psychic\n**C** | Confusion/Psychic\n**F** | Psycho Cut/Hyper Beam\n**F** | Confusion/Hyper Beam", 2275),
+    150: new Pokemon(150, colors.psychic, 'Psychic', 5, 'Tyranitar | Bite/Crunch\nMewtwo | Psycho Cut/Shadow Ball\nHoundoom | Snarl/Foul Play\nGyarados | Bite/Crunch\nDragonite | Dragon Tail/Outrage\nGengar | Sucker Punch/Shadow Ball\nScizor | Fury Cutter/X-Scissor\nShiftry | Feint Attack/Foul Play\nCrawdaunt | Snarl/Night Slash\nPinsir | Fury Cutter/X-Scissor', "Bug, Dark, Ghost", "Fighting, Psychic", "**A** | Confusion/Shadow Ball\n**A** | Confusion/Psychic\n**A** | Confusion/Hyper Beam\n**A** | Confusion/Focus Blast\n**A** | Psycho Cut/Psychic\n**A** | Psycho Cut/Shadow Ball\n**A-** | Psycho Cut/Hyper Beam\n**B** | Psycho Cut/Focus Blast", '2275 (2844 in windy weather)'),
     151: undefined,
     152: undefined,
     153: new Pokemon(153, 0x017208, 'Grass', 1, 'N/A', 'Bug, Fire, Flying, Poison, Ice', 'Electric, Grass, Ground, Water', 'Razor Leaf\nTackle\nEnergy Ball\nGrass Knot\nAncient Power', 740),
